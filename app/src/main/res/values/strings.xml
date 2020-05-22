@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TwitterBot</string>
+    <string name="novel_name">Novel Name:</string>
+    <string name="novel_link">Novel Link:</string>
+    <string name="tags">Tags:</string>
+    <string name="tweet">Tweet Number:</string>
+    <string name="name">name</string>
+    <string name="link">link</string>
+    <string name="tagss">tags</string>
+    <string name="tweetno">tweet</string>
+</resources>

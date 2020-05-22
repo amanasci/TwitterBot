@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:padding="24dp"
+        android:id="@+id/namelayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novel_name"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/rect"
+            android:padding="7dp"
+            android:textColor="#FFFF"
+            android:inputType="text"
+            android:hint="Novel Name"
+            android:importantForAutofill="no" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        android:id="@+id/linklayout"
+        android:layout_below="@id/namelayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novel_link"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rect"
+            android:textColor="#FFFF"
+            android:padding="7dp"
+            android:id="@+id/link"
+            android:inputType="text"
+            android:hint="Novel Link"
+            android:importantForAutofill="no" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="24dp"
+        android:layout_below="@id/linklayout"
+        android:id="@+id/tagslayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tags"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="10sp"
+            android:background="@drawable/rect"
+            android:textColor="#FFFF"
+            android:padding="7dp"
+            android:id="@+id/tags"
+            android:inputType="text"
+            android:hint="Add your tags for twitter"
+            android:importantForAutofill="no" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="203dp"
+        android:layout_height="43dp"
+        android:background="@drawable/sub"
+        android:layout_below="@id/tagslayout"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:id="@+id/save"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tweetnumlayout"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:layout_below="@id/save">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tweet"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tweetno"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/tweetnum"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novelnamelayout"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_below="@id/tweetnumlayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novel_name"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:height="28sp"
+            android:id="@+id/novel_name"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/novellinklayout"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_below="@id/novelnamelayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/novel_link"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link"
+            android:height="28sp"
+            android:id="@+id/novel_link"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_below="@id/novellinklayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tags"
+            android:height="28sp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tagss"
+            android:height="28sp"
+            android:id="@+id/novel_tags"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:fontFamily="@font/sahitya_bold"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffff"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:text="Made with ♥by amanasci"/>
+
+
+
+
+
+</RelativeLayout>
