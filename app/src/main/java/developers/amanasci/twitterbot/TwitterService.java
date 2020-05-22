@@ -39,13 +39,13 @@ public class TwitterService extends Service {
 
 
 
-        // do your jobs here
+        // do your jobs here after adding keys
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("WtUwEcEYPvp9gBbWtPCCv40Lm")
-                .setOAuthConsumerSecret("WFsyJlOo8mGkSgxgvRhqv9eA3c8E8HbJBXRdcfvFlG1yzgxXs3")
-                .setOAuthAccessToken("1258533797030739975-PdFuTGmEDwVNGKu8XEKXFM7piS2cMh")
-                .setOAuthAccessTokenSecret("FKfS7grlOiJtournGEXOSlbHjPNYEWzYmBuiISm9UeHY6");
+                .setOAuthConsumerKey("")
+                .setOAuthConsumerSecret("")
+                .setOAuthAccessToken("")
+                .setOAuthAccessTokenSecret("");
         TwitterFactory tf = new TwitterFactory(cb.build());
         final Twitter twitter = tf.getInstance();
 
